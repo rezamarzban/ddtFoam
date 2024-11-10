@@ -1,0 +1,23 @@
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/turbulenceModels/compressible/turbulenceModel \
+    -I$(LIB_SRC)/turbulenceModels/compressible/RAS/lnInclude \
+    -I../src/thermophysicalModels/reactionThermo/lnInclude \
+    -I../src/thermophysicalModels/basic/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/specie/lnInclude \
+    -I../src/thermophysicalModels/chemistryModel/lnInclude \
+    -I$(LIB_SRC)/ODE/lnInclude \
+    -I../Solver \
+    -I../src/interpolationLookUpTable 
+
+EXE_LIBS = \
+    -L$(FOAM_USER_LIBBIN) \
+    -lfiniteVolume \
+    -lcompressibleRASModels \
+    -lcompressibleLESModels \
+    -lmyreactionThermophysicalModels \
+    -lmybasicThermophysicalModels \
+    -lmychemistryModel \
+    -lspecie \
+    -lODE
+

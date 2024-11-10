@@ -1,0 +1,14 @@
+! no reaction, just a dummy using all the species
+!
+ELEMENTS
+ H O N
+END
+SPECIES 
+O2 H OH O H2 H2O N2 HO2 H2O2
+END
+! units s, mol, cm^3, cal (CHEMKIN default)
+! operator '=': backward reaction is calculated automatically
+!    via equilibrium constant
+REACTIONS
+   O2+O2 => O2+O2		1.0e0		0.00	  25e+06 ! 
+END

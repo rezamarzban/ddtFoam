@@ -1,0 +1,15 @@
+DEPENDENCIES = \
+chemistryModel/basicChemistryModel/basicChemistryModel.dep\
+chemistryModel/psiChemistryModel/psiChemistryModel.dep\
+chemistryModel/psiChemistryModel/newPsiChemistryModel.dep\
+chemistryModel/psiChemistryModel/psiChemistryModels.dep\
+chemistryModel/ePsiChemistryModel/ePsiChemistryModel.dep\
+chemistryModel/ePsiChemistryModel/newEPsiChemistryModel.dep\
+chemistryModel/ePsiChemistryModel/ePsiChemistryModels.dep\
+chemistryModel/hPsiChemistryModel/hPsiChemistryModel.dep\
+chemistryModel/hPsiChemistryModel/newhPsiChemistryModel.dep\
+chemistryModel/hPsiChemistryModel/hPsiChemistryModels.dep\
+chemistryModel/rhoChemistryModel/rhoChemistryModel.dep\
+chemistryModel/rhoChemistryModel/newRhoChemistryModel.dep\
+chemistryModel/rhoChemistryModel/rhoChemistryModels.dep\
+chemistrySolver/chemistrySolver/makeChemistrySolvers.dep

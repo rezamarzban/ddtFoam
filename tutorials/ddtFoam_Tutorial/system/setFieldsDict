@@ -1,0 +1,95 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \    /   O peration     | Version:  1.7.1                                 |
+|   \  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      setFieldsDict;
+}
+// * * * * created with automaticSetFields_tfc_zu_Grad3s_03.c * * * * * * * *  //
+
+
+	defaultFieldValues
+	(
+            volScalarFieldValue c   0.00
+            volScalarFieldValue fH 0.02908
+            volScalarFieldValue H2  0.02908
+            volScalarFieldValue O2  0.22617
+            volScalarFieldValue H2O 0.0
+            volScalarFieldValue N2  0.74475
+            volScalarFieldValue T   293.0
+            volScalarFieldValue Tu   293.0
+        );
+regions
+(
+    boxToCell
+    {
+        box (-10 -0.0300 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.121
+	    volScalarFieldValue fH  0.00949
+	    volScalarFieldValue H2  0.00949
+	    volScalarFieldValue O2  0.23074
+	    volScalarFieldValue N2  0.75977
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0100 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.288
+	    volScalarFieldValue fH  0.02754
+	    volScalarFieldValue H2  0.02754
+	    volScalarFieldValue O2  0.22653
+	    volScalarFieldValue N2  0.74593
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0100 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.491
+	    volScalarFieldValue fH  0.06322
+	    volScalarFieldValue H2  0.06322
+	    volScalarFieldValue O2  0.21822
+	    volScalarFieldValue N2  0.71856
+
+        );
+    }
+
+    cylinderToCell
+    {
+        p1       (0.0 0.0 -1); // start point on cylinder axis
+        p2       (0.0 0.0  1);  // end point on cylinder axis
+        radius   0.02451;
+        fieldValues
+        (
+
+            volScalarFieldValue c   1.00
+            volScalarFieldValue fH  0.02908
+            volScalarFieldValue H2  0.00058
+            volScalarFieldValue O2  0.00000
+            volScalarFieldValue H2O 0.25467
+            volScalarFieldValue N2  0.71856
+            volScalarFieldValue T   2448.5
+        );
+    }
+);
+
+// ************************************************************************* //
+// inhomogeneous mixture for closed vessel with 30.0 % H2 generated         //
+// ************************************************************************* //

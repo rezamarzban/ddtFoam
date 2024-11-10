@@ -1,0 +1,473 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \    /   O peration     | Version:  1.7.1                                 |
+|   \  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      setFieldsDict;
+}
+// * * * * created with automaticSetFields_tfc_zu_Grad3s_03.c * * * * * * * *  //
+
+
+	defaultFieldValues
+	(
+            volScalarFieldValue c   0.00
+            volScalarFieldValue fH 0.02908
+            volScalarFieldValue H2  0.02908
+            volScalarFieldValue O2  0.22617
+            volScalarFieldValue H2O 0.0
+            volScalarFieldValue N2  0.74475
+            volScalarFieldValue T   293.0
+            volScalarFieldValue Tu   293.0
+        );
+regions
+(
+    boxToCell
+    {
+        box (-10 -0.0300 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.097
+	    volScalarFieldValue fH  0.00744
+	    volScalarFieldValue H2  0.00744
+	    volScalarFieldValue O2  0.23121
+	    volScalarFieldValue N2  0.76135
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0280 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.099
+	    volScalarFieldValue fH  0.00764
+	    volScalarFieldValue H2  0.00764
+	    volScalarFieldValue O2  0.23117
+	    volScalarFieldValue N2  0.76120
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0260 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.103
+	    volScalarFieldValue fH  0.00797
+	    volScalarFieldValue H2  0.00797
+	    volScalarFieldValue O2  0.23109
+	    volScalarFieldValue N2  0.76094
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0240 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.109
+	    volScalarFieldValue fH  0.00846
+	    volScalarFieldValue H2  0.00846
+	    volScalarFieldValue O2  0.23098
+	    volScalarFieldValue N2  0.76057
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0220 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.116
+	    volScalarFieldValue fH  0.00910
+	    volScalarFieldValue H2  0.00910
+	    volScalarFieldValue O2  0.23083
+	    volScalarFieldValue N2  0.76007
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0200 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.125
+	    volScalarFieldValue fH  0.00992
+	    volScalarFieldValue H2  0.00992
+	    volScalarFieldValue O2  0.23064
+	    volScalarFieldValue N2  0.75945
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0180 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.136
+	    volScalarFieldValue fH  0.01091
+	    volScalarFieldValue H2  0.01091
+	    volScalarFieldValue O2  0.23040
+	    volScalarFieldValue N2  0.75868
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0160 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.149
+	    volScalarFieldValue fH  0.01209
+	    volScalarFieldValue H2  0.01209
+	    volScalarFieldValue O2  0.23013
+	    volScalarFieldValue N2  0.75778
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0140 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.163
+	    volScalarFieldValue fH  0.01346
+	    volScalarFieldValue H2  0.01346
+	    volScalarFieldValue O2  0.22981
+	    volScalarFieldValue N2  0.75673
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0120 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.179
+	    volScalarFieldValue fH  0.01503
+	    volScalarFieldValue H2  0.01503
+	    volScalarFieldValue O2  0.22944
+	    volScalarFieldValue N2  0.75553
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0100 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.197
+	    volScalarFieldValue fH  0.01681
+	    volScalarFieldValue H2  0.01681
+	    volScalarFieldValue O2  0.22903
+	    volScalarFieldValue N2  0.75416
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0080 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.215
+	    volScalarFieldValue fH  0.01880
+	    volScalarFieldValue H2  0.01880
+	    volScalarFieldValue O2  0.22857
+	    volScalarFieldValue N2  0.75263
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0060 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.235
+	    volScalarFieldValue fH  0.02102
+	    volScalarFieldValue H2  0.02102
+	    volScalarFieldValue O2  0.22805
+	    volScalarFieldValue N2  0.75093
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0040 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.256
+	    volScalarFieldValue fH  0.02346
+	    volScalarFieldValue H2  0.02346
+	    volScalarFieldValue O2  0.22748
+	    volScalarFieldValue N2  0.74906
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0020 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.277
+	    volScalarFieldValue fH  0.02612
+	    volScalarFieldValue H2  0.02612
+	    volScalarFieldValue O2  0.22686
+	    volScalarFieldValue N2  0.74702
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 -0.0000 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.300
+	    volScalarFieldValue fH  0.02901
+	    volScalarFieldValue H2  0.02901
+	    volScalarFieldValue O2  0.22619
+	    volScalarFieldValue N2  0.74480
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0020 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.322
+	    volScalarFieldValue fH  0.03213
+	    volScalarFieldValue H2  0.03213
+	    volScalarFieldValue O2  0.22546
+	    volScalarFieldValue N2  0.74241
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0040 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.345
+	    volScalarFieldValue fH  0.03545
+	    volScalarFieldValue H2  0.03545
+	    volScalarFieldValue O2  0.22469
+	    volScalarFieldValue N2  0.73986
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0060 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.367
+	    volScalarFieldValue fH  0.03896
+	    volScalarFieldValue H2  0.03896
+	    volScalarFieldValue O2  0.22387
+	    volScalarFieldValue N2  0.73717
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0080 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.389
+	    volScalarFieldValue fH  0.04263
+	    volScalarFieldValue H2  0.04263
+	    volScalarFieldValue O2  0.22301
+	    volScalarFieldValue N2  0.73435
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0100 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.411
+	    volScalarFieldValue fH  0.04643
+	    volScalarFieldValue H2  0.04643
+	    volScalarFieldValue O2  0.22213
+	    volScalarFieldValue N2  0.73144
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0120 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.431
+	    volScalarFieldValue fH  0.05030
+	    volScalarFieldValue H2  0.05030
+	    volScalarFieldValue O2  0.22123
+	    volScalarFieldValue N2  0.72847
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0140 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.450
+	    volScalarFieldValue fH  0.05416
+	    volScalarFieldValue H2  0.05416
+	    volScalarFieldValue O2  0.22033
+	    volScalarFieldValue N2  0.72551
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0160 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.468
+	    volScalarFieldValue fH  0.05795
+	    volScalarFieldValue H2  0.05795
+	    volScalarFieldValue O2  0.21945
+	    volScalarFieldValue N2  0.72261
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0180 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.484
+	    volScalarFieldValue fH  0.06154
+	    volScalarFieldValue H2  0.06154
+	    volScalarFieldValue O2  0.21861
+	    volScalarFieldValue N2  0.71985
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0200 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.498
+	    volScalarFieldValue fH  0.06481
+	    volScalarFieldValue H2  0.06481
+	    volScalarFieldValue O2  0.21785
+	    volScalarFieldValue N2  0.71734
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0220 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.509
+	    volScalarFieldValue fH  0.06765
+	    volScalarFieldValue H2  0.06765
+	    volScalarFieldValue O2  0.21719
+	    volScalarFieldValue N2  0.71516
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0240 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.518
+	    volScalarFieldValue fH  0.06990
+	    volScalarFieldValue H2  0.06990
+	    volScalarFieldValue O2  0.21666
+	    volScalarFieldValue N2  0.71344
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0260 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.524
+	    volScalarFieldValue fH  0.07142
+	    volScalarFieldValue H2  0.07142
+	    volScalarFieldValue O2  0.21631
+	    volScalarFieldValue N2  0.71227
+
+        );
+    }
+    boxToCell
+    {
+        box (-10 0.0280 -10) (10 10 10);
+
+        fieldValues
+        (
+	    // xH2 = 0.526
+	    volScalarFieldValue fH  0.07210
+	    volScalarFieldValue H2  0.07210
+	    volScalarFieldValue O2  0.21615
+	    volScalarFieldValue N2  0.71175
+
+        );
+    }
+
+    cylinderToCell
+    {
+        p1       (0.0 0.0 -1); // start point on cylinder axis
+        p2       (0.0 0.0  1);  // end point on cylinder axis
+        radius   0.02451;
+        fieldValues
+        (
+
+            volScalarFieldValue c   1.00
+            volScalarFieldValue fH  0.02908
+            volScalarFieldValue H2  0.00058
+            volScalarFieldValue O2  0.00000
+            volScalarFieldValue H2O 0.25467
+            volScalarFieldValue N2  0.71175
+            volScalarFieldValue T   2448.5
+        );
+    }
+);
+
+// ************************************************************************* //
+// inhomogeneous mixture for closed vessel with 30.0 % H2 generated         //
+// ************************************************************************* //

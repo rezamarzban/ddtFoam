@@ -1,0 +1,6 @@
+rusanovALEFlux/rusanovALEFlux.C
+hllcALEFlux/hllcALEFlux.C
+AUSMplusALEFlux/AUSMplusALEFlux.C
+AUSMplusUpALEFlux/AUSMplusUpALEFlux.C
+
+LIB = $(FOAM_USER_LIBBIN)/libddtFoamFluxes

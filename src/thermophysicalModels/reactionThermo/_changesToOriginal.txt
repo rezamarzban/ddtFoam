@@ -1,0 +1,5 @@
+10.02.11 
+implemented Cv() analogously to Cp() in combustionThermo/mixtureThermos/hsPsiMixtureThermo
+implemented eCombustionThermo, ePsiMixtureThermo
+
+

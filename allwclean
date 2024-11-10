@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd BCs; wclean; cd ..
+cd Fluxes; wclean; cd ..
+cd Solver; wclean; cd ..

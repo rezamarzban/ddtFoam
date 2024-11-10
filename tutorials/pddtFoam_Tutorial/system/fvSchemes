@@ -1,0 +1,106 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.0                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+
+    root            "";
+    case            "";
+    instance        "";
+    local           "";
+
+    class           dictionary;
+    object          fvSchemes;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+ddtSchemes
+{
+  default Euler;
+}
+
+gradSchemes
+{
+    default         Gauss linear;
+
+    grad((1*c))	    Gauss linear;
+    //grad(c)	    Gauss upwind phiC;
+    grad(c)	    Gauss linear;
+    grad(U)	    Gauss linear;
+    grad(p)         Gauss linear;
+    grad(epsilon)   Gauss linear;
+    grad(k) 	    Gauss linear;
+}
+
+divSchemes
+{
+    default          none;
+    div(phi,rho)     Gauss vanLeer;
+    div(phi,U)       Gauss linearUpwind grad(U);// cellLimited Gauss linear 1; 
+    div(phiU,p)      Gauss vanLeer;
+  //  div(phid,p)	     Gauss upwind;
+    div(phid,p)	     Gauss vanLeer;
+    div(phi,Yi_h)    Gauss vanLeer;
+
+
+    div((muEff*dev2(grad(U).T()))) 	Gauss vanLeer phi;
+    div((muEff*dev2(T(grad(U)))))	Gauss vanLeer phi;
+
+    div(phi,k)    	Gauss upwind;
+    div(phi,epsilon)    Gauss upwind;
+    div(phi,omega)    	Gauss upwind;
+    
+
+   // only for b-Xi
+    div(phiSt,b)     Gauss vanLeer;
+    div((U+((sL*Xi)*grad(b)))) 		Gauss vanLeer phi;    
+    div((sL*grad(b)))			Gauss vanLeer phi;
+    div(U)				Gauss vanLeer phi;
+    div(phiXi,Xi)	Gauss vanLeer;
+
+}
+
+laplacianSchemes
+{
+    //default none;		// for ddtLookup
+	default      		Gauss linear limited 0.5; // for reactingFoam
+
+    laplacian(muEff,U)      		Gauss linear limited 0.5;
+    laplacian((muEff|1),tau) 		Gauss linear limited 0.5;
+    laplacian((muEff|1),c) 		Gauss linear limited 0.5;
+    laplacian((muEff|1),fH2) 		Gauss linear limited 0.5;
+    laplacian(alphaEff,h) 		Gauss linear limited 0.5;
+    laplacian(alphaEff,hu) 		Gauss linear limited 0.5;
+    laplacian((rho*(1|A(U))),p) 	Gauss linear limited 0.5;
+    laplacian(DepsilonEff,epsilon) 	Gauss linear limited 0.5;
+    laplacian(DkEff,k)			Gauss linear limited 0.5;
+}
+
+interpolationSchemes
+{
+    default linear;
+
+    reconstruct(rho) Gamma 1.0;   	// for acoustic Courant number
+    reconstruct(U)   GammaV 1.0;	// for acoustic Courant number
+}
+
+snGradSchemes
+{
+    default         corrected;
+}
+
+fluxRequired
+{
+    p;
+}
+
+
+// ************************************************************************* //

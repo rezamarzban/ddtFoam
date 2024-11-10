@@ -1,0 +1,17 @@
+#!/bin/sh
+
+
+export RUNDIR=`pwd`
+
+rm -r 0.000*
+mkdir 0.000000000
+rm initialvalues/*~
+cp initialvalues/* 0.000000000
+setFields
+ddtFoam
+rm -r sets
+sample
+
+echo case
+echo $RUNDIR
+echo is finished

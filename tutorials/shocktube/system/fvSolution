@@ -1,0 +1,141 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    rho
+    {
+        solver          diagonal;
+    }
+
+    rhoU
+    {
+        solver          diagonal;
+    }
+
+    rhoE
+    {
+        solver          diagonal;
+    }
+
+    rhoEu
+    {
+        solver          diagonal;
+    }
+    rhoYi
+    {
+        solver          diagonal;
+    }
+    rhoC
+    {
+        solver          diagonal;
+    }
+    rhoB
+    {
+        solver          diagonal;
+    }
+    rhoTau
+    {
+        solver          diagonal;
+    }
+    rhofH
+    {
+        solver          diagonal;
+    }
+    U
+    {
+	solver		PCG;
+        preconditioner   DIC;
+        tolerance        1e-06;
+        relTol           0;
+    };
+    
+    fH
+    {
+	solver		PCG;
+        preconditioner   DIC;
+        tolerance        1e-06;
+        relTol           0;
+    };
+    tau
+    {
+	solver		PCG;
+        preconditioner   DIC;
+        tolerance        1e-06;
+        relTol           0;
+    };
+    c
+    {
+	solver		PCG;
+        preconditioner   DIC;
+        tolerance        1e-06;
+        relTol           0;
+    };
+    
+    
+    
+    
+
+    Xi
+    {
+        solver          smoothSolver;
+        smoother        GaussSeidel;
+        nSweeps         2;
+        tolerance       1e-09;
+        relTol          0.01;
+    }
+    
+    k
+    {
+	solver		 PBiCG;
+        preconditioner   DILU;
+        tolerance        1e-06;
+        relTol           0;
+    };
+    epsilon
+    {
+	solver		 PBiCG;
+        preconditioner   DILU;
+        tolerance        1e-06;
+        relTol           0;
+    };
+    omega
+    {
+	solver		 PBiCG;
+        preconditioner   DILU;
+        tolerance        1e-06;
+        relTol           0;
+    };
+    
+}
+
+Riemann
+{
+    secondOrder yes;            // activate 2nd order extensions
+    multidimLimiter yes;        // Switch between 1D and multidimensional limiters
+    limiterName "MinmodSlope"; // vanAlbadaSlope, MinmodSlope, vanLeerSlope
+    epsilon "0";                // VK constant    
+}
+
+relaxationFactors
+{
+    // Note: under-relaxation factors used in wave-transmissive schemes
+    k               0.2;
+    omega           0.2;
+}
+
+// ************************************************************************* //

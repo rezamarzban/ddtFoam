@@ -1,0 +1,24 @@
+LOCAL_OBJECTS = \
+basicMixture.o\
+basicMixtures.o\
+basicThermo.o\
+unburnedThermo.o\
+basicPsiThermo.o\
+newBasicPsiThermo.o\
+hPsiThermos.o\
+hsPsiThermos.o\
+ePsiThermos.o\
+basicRhoThermo.o\
+newBasicRhoThermo.o\
+hRhoThermos.o\
+hsRhoThermos.o\
+fixedEnthalpyFvPatchScalarField.o\
+gradientEnthalpyFvPatchScalarField.o\
+mixedEnthalpyFvPatchScalarField.o\
+fixedInternalEnergyFvPatchScalarField.o\
+gradientInternalEnergyFvPatchScalarField.o\
+mixedInternalEnergyFvPatchScalarField.o\
+fixedUnburnedEnthalpyFvPatchScalarField.o\
+gradientUnburnedEnthalpyFvPatchScalarField.o\
+mixedUnburnedEnthalpyFvPatchScalarField.o\
+wallHeatTransferFvPatchScalarField.o

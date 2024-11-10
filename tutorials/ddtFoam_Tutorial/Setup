@@ -1,0 +1,31 @@
+#!/bin/sh
+
+rm core
+rm -r 0.*
+mkdir 0.008000000
+rm initialvalues/*~
+cd constant/polyMesh
+g++ ../../meshdefine.c -o run
+./run
+cd ../..
+blockMesh
+
+
+checkMesh
+setSet -batch setObstacles.setSet	# obstacles
+subsetMesh c0 -patch wand -overwrite	# obstacles
+
+cp initialvalues/* 0.008000000
+
+
+# cd system
+# g++ $HOME/OpenFOAM/scripts/automaticSetFields_tfc_zu_Grad3s_03.c -o run
+# chmod 774 run
+# ./run 30 1.0 24.51 3 > setFieldsDict	# %H2 cIgn ignRadius[mm] steps
+# cd ..
+# setFields
+
+rm -r VTK
+
+mapFields ../pddtFoam_Tutorial
+

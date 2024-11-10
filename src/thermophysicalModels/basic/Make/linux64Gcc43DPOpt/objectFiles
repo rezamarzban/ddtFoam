@@ -1,0 +1,24 @@
+OBJECTS = \
+$(OBJECTS_DIR)/basicMixture.o\
+$(OBJECTS_DIR)/basicMixtures.o\
+$(OBJECTS_DIR)/basicThermo.o\
+$(OBJECTS_DIR)/unburnedThermo.o\
+$(OBJECTS_DIR)/basicPsiThermo.o\
+$(OBJECTS_DIR)/newBasicPsiThermo.o\
+$(OBJECTS_DIR)/hPsiThermos.o\
+$(OBJECTS_DIR)/hsPsiThermos.o\
+$(OBJECTS_DIR)/ePsiThermos.o\
+$(OBJECTS_DIR)/basicRhoThermo.o\
+$(OBJECTS_DIR)/newBasicRhoThermo.o\
+$(OBJECTS_DIR)/hRhoThermos.o\
+$(OBJECTS_DIR)/hsRhoThermos.o\
+$(OBJECTS_DIR)/fixedEnthalpyFvPatchScalarField.o\
+$(OBJECTS_DIR)/gradientEnthalpyFvPatchScalarField.o\
+$(OBJECTS_DIR)/mixedEnthalpyFvPatchScalarField.o\
+$(OBJECTS_DIR)/fixedInternalEnergyFvPatchScalarField.o\
+$(OBJECTS_DIR)/gradientInternalEnergyFvPatchScalarField.o\
+$(OBJECTS_DIR)/mixedInternalEnergyFvPatchScalarField.o\
+$(OBJECTS_DIR)/fixedUnburnedEnthalpyFvPatchScalarField.o\
+$(OBJECTS_DIR)/gradientUnburnedEnthalpyFvPatchScalarField.o\
+$(OBJECTS_DIR)/mixedUnburnedEnthalpyFvPatchScalarField.o\
+$(OBJECTS_DIR)/wallHeatTransferFvPatchScalarField.o

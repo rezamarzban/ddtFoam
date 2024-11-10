@@ -1,0 +1,8 @@
+#!/bin/sh
+
+./src/thermophysicalModels/Allwmake
+
+wmake libso BCs
+wmake libso Fluxes
+wmake Solver
+wmake pSolver

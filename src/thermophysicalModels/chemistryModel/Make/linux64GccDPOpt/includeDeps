@@ -1,0 +1,14 @@
+include chemistryModel/basicChemistryModel/basicChemistryModel.dep
+include chemistryModel/psiChemistryModel/psiChemistryModel.dep
+include chemistryModel/psiChemistryModel/newPsiChemistryModel.dep
+include chemistryModel/psiChemistryModel/psiChemistryModels.dep
+include chemistryModel/ePsiChemistryModel/ePsiChemistryModel.dep
+include chemistryModel/ePsiChemistryModel/newEPsiChemistryModel.dep
+include chemistryModel/ePsiChemistryModel/ePsiChemistryModels.dep
+include chemistryModel/hPsiChemistryModel/hPsiChemistryModel.dep
+include chemistryModel/hPsiChemistryModel/newhPsiChemistryModel.dep
+include chemistryModel/hPsiChemistryModel/hPsiChemistryModels.dep
+include chemistryModel/rhoChemistryModel/rhoChemistryModel.dep
+include chemistryModel/rhoChemistryModel/newRhoChemistryModel.dep
+include chemistryModel/rhoChemistryModel/rhoChemistryModels.dep
+include chemistrySolver/chemistrySolver/makeChemistrySolvers.dep

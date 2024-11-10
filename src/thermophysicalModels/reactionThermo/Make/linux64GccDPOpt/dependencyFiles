@@ -1,0 +1,27 @@
+DEPENDENCIES = \
+chemistryReaders/chemkinReader/chemkinReader.dep\
+chemistryReaders/chemkinReader/chemkinLexer.dep\
+chemistryReaders/chemistryReader/makeChemistryReaders.dep\
+mixtures/basicMultiComponentMixture/basicMultiComponentMixture.dep\
+combustionThermo/hCombustionThermo/hCombustionThermo.dep\
+combustionThermo/hCombustionThermo/hCombustionThermoNew.dep\
+combustionThermo/hCombustionThermo/hCombustionThermos.dep\
+combustionThermo/eCombustionThermo/eCombustionThermo.dep\
+combustionThermo/eCombustionThermo/neweCombustionThermo.dep\
+combustionThermo/eCombustionThermo/eCombustionThermos.dep\
+combustionThermo/hsCombustionThermo/hsCombustionThermo.dep\
+combustionThermo/hsCombustionThermo/hsCombustionThermoNew.dep\
+combustionThermo/hsCombustionThermo/hsCombustionThermos.dep\
+combustionThermo/hhuCombustionThermo/hhuCombustionThermo.dep\
+combustionThermo/hhuCombustionThermo/hhuCombustionThermoNew.dep\
+combustionThermo/hhuCombustionThermo/hhuCombustionThermos.dep\
+reactionThermo/hReactionThermo/hReactionThermo.dep\
+reactionThermo/hReactionThermo/hReactionThermoNew.dep\
+reactionThermo/hReactionThermo/hReactionThermos.dep\
+reactionThermo/hsReactionThermo/hsReactionThermo.dep\
+reactionThermo/hsReactionThermo/hsReactionThermoNew.dep\
+reactionThermo/hsReactionThermo/hsReactionThermos.dep\
+derivedFvPatchFields/fixedUnburntEnthalpy/fixedUnburntEnthalpyFvPatchScalarField.dep\
+derivedFvPatchFields/gradientUnburntEnthalpy/gradientUnburntEnthalpyFvPatchScalarField.dep\
+derivedFvPatchFields/mixedUnburntEnthalpy/mixedUnburntEnthalpyFvPatchScalarField.dep\
+derivedFvPatchFields/fixedRhoE/fixedRhoEFvPatchScalarField.dep

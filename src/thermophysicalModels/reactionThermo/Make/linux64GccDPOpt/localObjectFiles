@@ -1,0 +1,27 @@
+LOCAL_OBJECTS = \
+chemkinReader.o\
+chemkinLexer.o\
+makeChemistryReaders.o\
+basicMultiComponentMixture.o\
+hCombustionThermo.o\
+hCombustionThermoNew.o\
+hCombustionThermos.o\
+eCombustionThermo.o\
+neweCombustionThermo.o\
+eCombustionThermos.o\
+hsCombustionThermo.o\
+hsCombustionThermoNew.o\
+hsCombustionThermos.o\
+hhuCombustionThermo.o\
+hhuCombustionThermoNew.o\
+hhuCombustionThermos.o\
+hReactionThermo.o\
+hReactionThermoNew.o\
+hReactionThermos.o\
+hsReactionThermo.o\
+hsReactionThermoNew.o\
+hsReactionThermos.o\
+fixedUnburntEnthalpyFvPatchScalarField.o\
+gradientUnburntEnthalpyFvPatchScalarField.o\
+mixedUnburntEnthalpyFvPatchScalarField.o\
+fixedRhoEFvPatchScalarField.o

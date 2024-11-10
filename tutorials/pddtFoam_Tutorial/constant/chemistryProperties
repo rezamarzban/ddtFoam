@@ -1,0 +1,67 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    class       dictionary;
+    location    "constant";
+    object      chemistryProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+ePsiChemistryModel  ODEChemistryModel<gasThermoPhysics>;
+hPsiChemistryModel  ODEChemistryModel<gasThermoPhysics>; // for pressure based solver
+
+chemistry           on;
+
+chemistrySolver     ode;
+
+initialChemicalTimeStep 4e-7;
+
+sequentialCoeffs
+{
+    cTauChem        0.001;
+}
+
+EulerImplicitCoeffs
+{
+    cTauChem        0.05;
+    equilibriumRateLimiter off;
+}
+
+odeCoeffs
+{
+    ODESolver       KRR4;
+    eps             1e-2;
+    scale           1;
+}
+
+// ************************************************************************* //
+
+quenching		off;
+
+tfcDict
+{
+    tfcModel            bXi;
+    pressureCorrection  on;
+
+
+    // bXi
+    sLCorrelation	Ettner;    // Ettner, Ardey
+    XiModel             algebraic; // fixed, algebraic, transport
+    XiCoef              XiCoef [ 0 0 0 0 0 0 0 ] 0.62;
+    XiShapeCoef         XiShapeCoef [ 0 0 0 0 0 0 0 ] 1;
+    uPrimeCoef          uPrimeCoef [ 0 0 0 0 0 0 0 ] 1;
+
+    yO2inAir            0.23295;
+
+}
+
+// ************************************************************************** // 
+

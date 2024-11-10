@@ -1,0 +1,21 @@
+chemistryModel/basicChemistryModel/basicChemistryModel.C
+
+chemistryModel/psiChemistryModel/psiChemistryModel.C
+chemistryModel/psiChemistryModel/newPsiChemistryModel.C
+chemistryModel/psiChemistryModel/psiChemistryModels.C
+
+chemistryModel/ePsiChemistryModel/ePsiChemistryModel.C
+chemistryModel/ePsiChemistryModel/newEPsiChemistryModel.C
+chemistryModel/ePsiChemistryModel/ePsiChemistryModels.C
+
+chemistryModel/hPsiChemistryModel/hPsiChemistryModel.C
+chemistryModel/hPsiChemistryModel/newhPsiChemistryModel.C
+chemistryModel/hPsiChemistryModel/hPsiChemistryModels.C
+
+chemistryModel/rhoChemistryModel/rhoChemistryModel.C
+chemistryModel/rhoChemistryModel/newRhoChemistryModel.C
+chemistryModel/rhoChemistryModel/rhoChemistryModels.C
+
+chemistrySolver/chemistrySolver/makeChemistrySolvers.C
+
+LIB = $(FOAM_USER_LIBBIN)/libmychemistryModel

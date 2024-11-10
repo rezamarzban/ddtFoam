@@ -1,0 +1,11 @@
+# a comment - this is ignored
+changelog
+# no files ending with a ~
+*~
+*.prot
+*.OpenFOAM
+*.foam
+# no directories starting with linux
+linux*/
+0.0*/
+

@@ -1,0 +1,10 @@
+05.07.12
+Im Gegensatz zu lookupRiemannFoam weigert sich dieser Solver, die von mir geschriebenen probes ("libmysampling.so") zu verwenden.
+Zündung und Einbindung der engine library entfernt, da engine auf die sampling library auf dem Server verweist
+-> Jetzt klappt das Sampling und statt
+      *** glibc detected *** xipressure3rdFoam: double free or corruption (!prev): 0x0000000000cd1230 ***
+   kommt jetzt nur noch ein 
+      Segmentation fault
+   am Ende des runs.
+
+   

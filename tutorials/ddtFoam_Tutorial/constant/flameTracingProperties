@@ -1,0 +1,36 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.0                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+version             1.0;
+format              ascii;
+root                "";
+case                "";
+local               "constant";
+class               dictionary;
+form                dictionary;
+object              flameTracingProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Directory
+
+flameTracing		on;
+stdDirectory		on;
+subDirectory		"flameTracing";
+fileName		"flameTrace";
+tracingDebug		off;
+
+// Tracing conditions
+
+field			c;
+value			0.5;
+tracingInterval		10;
+
+// ************************************************************************* //
