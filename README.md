@@ -13,8 +13,10 @@ http://shepherd.caltech.edu/EDL/public/cantera/html/SD_Toolbox/
 
 **Build**
 
+Find installed OpenFoam `bashrc` by running `find / -name bashrc` command, Then run: 
+
 ```
-source OpenFOAM_PATH/etc/bashrc
+source OpenFOAM_PATH_TO/etc/bashrc
 ```
 
 Then run this command in the cloned repository directory:
