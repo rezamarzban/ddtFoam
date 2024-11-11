@@ -2,7 +2,7 @@ ddtFoam, an OpenFOAM Solver to simulate the deflagration-to-detonation transitio
 
 For an introduction to the solver and tutorials, see the file readme.pdf
 
-lookup m files readme:
+**MATLAB files readme**
 
 2016-03-28
 
@@ -10,3 +10,15 @@ Added the files lookupY_05.m and lookuptIgn_06.m.
 These are (Matlab based) Cantera files which you can use to generate your own mixture composition and ignition delay times.
 They require the installation of the Shock and Detonation Toolbox, see
 http://shepherd.caltech.edu/EDL/public/cantera/html/SD_Toolbox/
+
+**Build**
+
+```
+source OpenFOAM_PATH/etc/bashrc
+```
+
+Then run this command in the cloned repository directory:
+
+```
+./Allwmake
+```
