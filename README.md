@@ -36,3 +36,13 @@ git clone https://git.code.sf.net/p/ddtfoam/code ddtfoam-code
 cd ddtfoam-code
 ./Allwmake
 ```
+
+**Simulation example in the docker**
+
+Run:
+
+```
+cd /OpenFOAM/root-2.1.x/ddtFoam-code/tutorials/pddtFoam_Tutorial
+./Setup
+pddtFoam
+```
