@@ -24,3 +24,15 @@ Then run this command in the cloned repository directory:
 ```
 ./Allwmake
 ```
+
+**Build in minimum OpenFoam 2.1.1 docker**
+
+Follow instructions in https://github.com/rezamarzban/openfoam211-docker to install and run its docker.
+
+Then run below commands in the `~/OpenFOAM/root-2.1.x` directory:
+
+```
+git clone https://git.code.sf.net/p/ddtfoam/code ddtfoam-code
+cd ddtfoam-code
+./Allwmake
+```
