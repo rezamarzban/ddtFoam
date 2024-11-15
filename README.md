@@ -13,6 +13,8 @@ http://shepherd.caltech.edu/EDL/public/cantera/html/SD_Toolbox/
 
 **Build**
 
+It needs `OpenFoam 2.1.1` at old OS versions to building.
+
 Find installed OpenFoam `bashrc` by running `find / -name bashrc` command, Then run: 
 
 ```
@@ -25,7 +27,7 @@ Then run this command in the cloned repository directory:
 ./Allwmake
 ```
 
-**Build in minimum OpenFoam 2.1.1 docker**
+**Build in OpenFoam 2.1.1 docker**
 
 Follow instructions in https://github.com/rezamarzban/openfoam211-docker to install and run its docker.
 
