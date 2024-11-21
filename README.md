@@ -26,7 +26,7 @@ docker pull rm314159/ddtfoam:latest
 Install: 
 
 ```
-docker run  -it -d --name container_ddt rm314159/ddtfoam
+docker run  -it -d --name container_ddt --entrypoint /bin/bash rm314159/ddtfoam
 ```
 
 Run: 
