@@ -69,4 +69,4 @@ cd ddtfoam-code
 
 **Recommendation**
 
-While `OpenFoam` and its solvers is not user-friendly, Use `CONVERGE Studio CFD` and its solvers which is user-friendly and available for different `Microsoft Windows` OS to simulating DDT. Also there is `ANSYS FLUENT`, `COMSOL MULTIPHASIC` and ` Autodesk CFD` to simulating such this problem.
+While `OpenFoam` and its solvers is not user-friendly, Use `CONVERGE Studio CFD` and its solvers which is user-friendly and available for different `Microsoft Windows` OS to simulating DDT. Also there is `ANSYS FLUENT`, `COMSOL Multiphysics` and ` Autodesk CFD` to simulating such this problem.
