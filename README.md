@@ -44,7 +44,7 @@ source /opt/openfoam211/etc/bashrc
 Simulation example, Run:
 
 ```
-cd ~/OpenFOAM/root-2.1.x/ddtFoam-code/tutorials/pddtFoam_Tutorial
+cd ~/OpenFOAM/root-2.1.x/ddtfoam-code/tutorials/pddtFoam_Tutorial
 ./Setup
 pddtFoam
 ```
